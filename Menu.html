@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1rem;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .topnav a.active {
+            background-color: rgb(117, 136, 78);
+            color: rgb(12, 20, 20);
+        }
+
+        main {
+            margin: 2rem auto;
+            max-width: 800px;
+            padding: 1rem;
+        }
+
+        h1,
+        h2 {
+            margin-top: 0;
+        }
+
+        .menu-section {
+            margin-bottom: 2rem;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .menu-item span {
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Restaurant</h1>
+    </header>
+    <nav>
+        <div class="topnav">
+            <a class="active" href="#appetizers">Appetizers</a>
+            <a href="#main-courses">Main Courses</a>
+            <a href="#desserts">Desserts</a>
+        </div>
+    </nav>
+    <main>
+        <section id="appetizers" class="menu-section">
+            <h2>Appetizers</h2>
+            <div class="menu-item">
+                <span>Garlic Bread</span>
+                <span>$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span>Bruschetta</span>
+                <span>$5.99</span>
+            </div>
+        </section>
+        <section id="main-courses" class="menu-section">
+            <h2>Main Courses</h2>
+            <div class="menu-item">
+                <span>Grilled Salmon</span>
+                <span>$12.99</span>
+            </div>
+            <div class="menu-item">
+                <span>Margherita Pizza</span>
+                <span>$10.99</span>
+            </div>
+        </section>
+        <section id="desserts" class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <span>Chocolate Cake</span>
+                <span>$6.99</span>
+            </div>
+            <div class="menu-item">
+                <span>Tiramisu</span>
+                <span>$5.99</span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; A simple Webpage
+    </footer>
+</body>
+
+</html>
